@@ -31,6 +31,9 @@
             this.pnlCanvas = new System.Windows.Forms.Panel();
             this.btnZonderKlassen = new System.Windows.Forms.Button();
             this.btnLeeg = new System.Windows.Forms.Button();
+            this.btnKruisje = new System.Windows.Forms.Button();
+            this.btnKruisjeClass = new System.Windows.Forms.Button();
+            this.btnMeerdereKruisjes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pnlCanvas
@@ -59,11 +62,43 @@
             this.btnLeeg.TabIndex = 1;
             this.btnLeeg.UseVisualStyleBackColor = false;
             // 
+            // btnKruisje
+            // 
+            this.btnKruisje.Location = new System.Drawing.Point(542, 93);
+            this.btnKruisje.Name = "btnKruisje";
+            this.btnKruisje.Size = new System.Drawing.Size(120, 23);
+            this.btnKruisje.TabIndex = 2;
+            this.btnKruisje.Text = "Kruisje";
+            this.btnKruisje.UseVisualStyleBackColor = true;
+            this.btnKruisje.Click += new System.EventHandler(this.btnKruisje_Click);
+            // 
+            // btnKruisjeClass
+            // 
+            this.btnKruisjeClass.Location = new System.Drawing.Point(542, 113);
+            this.btnKruisjeClass.Name = "btnKruisjeClass";
+            this.btnKruisjeClass.Size = new System.Drawing.Size(120, 23);
+            this.btnKruisjeClass.TabIndex = 2;
+            this.btnKruisjeClass.Text = "Kruisje met klasse";
+            this.btnKruisjeClass.UseVisualStyleBackColor = true;
+            this.btnKruisjeClass.Click += new System.EventHandler(this.btnKruisjeClass_Click);
+            // 
+            // btnMeerdereKruisjes
+            // 
+            this.btnMeerdereKruisjes.Location = new System.Drawing.Point(542, 132);
+            this.btnMeerdereKruisjes.Name = "btnMeerdereKruisjes";
+            this.btnMeerdereKruisjes.Size = new System.Drawing.Size(120, 23);
+            this.btnMeerdereKruisjes.TabIndex = 2;
+            this.btnMeerdereKruisjes.Text = "Meerdere kruisjes";
+            this.btnMeerdereKruisjes.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMeerdereKruisjes);
+            this.Controls.Add(this.btnKruisjeClass);
+            this.Controls.Add(this.btnKruisje);
             this.Controls.Add(this.btnLeeg);
             this.Controls.Add(this.btnZonderKlassen);
             this.Controls.Add(this.pnlCanvas);
@@ -78,6 +113,9 @@
         private System.Windows.Forms.Panel pnlCanvas;
         private System.Windows.Forms.Button btnZonderKlassen;
         private System.Windows.Forms.Button btnLeeg;
+        private System.Windows.Forms.Button btnKruisje;
+        private System.Windows.Forms.Button btnKruisjeClass;
+        private System.Windows.Forms.Button btnMeerdereKruisjes;
     }
 }
 

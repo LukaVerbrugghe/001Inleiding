@@ -74,5 +74,34 @@ namespace _001Inleiding
             }
 
         }
+
+        private void btnKruisje_Click(object sender, EventArgs e)
+        {
+            //hoe maken we een kruisje? --> 2 trapeziums
+            //graphic bepalen
+            Graphics g = pnlCanvas.CreateGraphics();
+
+            //trapezuim --> poligon
+            Point[] points2 = new Point[4];
+            points2[0] = new Point(200, 100);
+            points2[1] = new Point(220, 100);
+            points2[2] = new Point(180, 200);
+            points2[3] = new Point(160, 200);
+            g.DrawPolygon(new Pen(new SolidBrush(Color.Red), 1), points2);
+
+            //trapezuim --> poligon
+            Point[] points3 = new Point[4];
+            points3[0] = new Point(180, 100);
+            points3[1] = new Point(160, 100);
+            points3[2] = new Point(200, 200);
+            points3[3] = new Point(220, 200);
+            g.DrawPolygon(new Pen(new SolidBrush(Color.Red), 1), points3);
+        }
+
+        private void btnKruisjeClass_Click(object sender, EventArgs e)
+        {
+            //teken kruisje
+            Kruisje kruisje = new Kruisje(pnlCanvas.CreateGraphics(), 60, 100, new Point(190, 100));
+        }
     }
 }
