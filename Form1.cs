@@ -103,5 +103,53 @@ namespace _001Inleiding
             //teken kruisje
             Kruisje kruisje = new Kruisje(pnlCanvas.CreateGraphics(), 60, 100, new Point(190, 100));
         }
+
+        private void btnMeerdereKruisjes_Click(object sender, EventArgs e)
+        {
+            //meerdere kruisjes tekenen door gebruik te maken van onze klasse
+            Random rnd = new Random();
+            for (int i = 0; i < 4; i++)
+            {
+                Kruisje kruisje = new Kruisje(pnlCanvas.CreateGraphics(), rnd.Next(10, 100), rnd.Next(10, 80), new Point(rnd.Next(50, 500), rnd.Next(50, 350)));
+            }
+        }
+
+        private void btnLeeg_Click(object sender, EventArgs e)
+        {
+            //clear pannel
+            Graphics g =(pnlCanvas.CreateGraphics());
+            g.Clear(Color.White);
+        }
+
+        private void btnCirkels_Click(object sender, EventArgs e)
+        {
+            //graphics, pen, etc.
+            Graphics g = (pnlCanvas.CreateGraphics());
+            Pen redPen = new Pen(Color.Red, 3);
+
+            //teken cirkel
+            //variabele voor beginwaarde x-as
+            int x = 50;
+            //van links naar rechts, teken 3 cirkels (startpunt op x-as wordt telkens 50 verplaatst)
+            for (int i = 0; i < 3; i++)
+            {
+                g.DrawEllipse(redPen, x, 100, 50, 50);
+                x += 50;
+            }
+            int y = 50;
+            //teken de laatste 2 kruisjes (boven en onder), x-as veranderd niet, y-as wel
+            for (int i = 0;i < 2; i++)
+            {
+                g.DrawEllipse(redPen, 100, y, 50, 50);
+                g.DrawEllipse(redPen, 100, y, 50, 50);
+                y += 100;
+            }
+
+        }
+
+        private void btnCirkelsKlasse_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
