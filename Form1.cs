@@ -172,5 +172,25 @@ namespace _001Inleiding
                 Cirkel cirkel = new Cirkel(pnlCanvas.CreateGraphics(), random.Next(20, 400), random.Next(20, 300), straal);
             }
         }
+
+        private void btnMannetje_Click(object sender, EventArgs e)
+        {
+            //we willen een ventje tekenen
+            //dit ventje is eigenlijk een paar vreemde trapezia en een cirkel als hoofd. Helaas kunnen we enkel de trapezia uit een reeds gemaakte klasse maken want de cirkels zijn met te veel en niet de juiste kleur
+            //deze cirkel tekenen we dus zelf
+            
+            //we beginnen direct in een klasse, want daar wordt daan blij van :)
+            Mannetje mannetje = new Mannetje(pnlCanvas.CreateGraphics(), new SolidBrush(Color.Red), 25, 25, 30);
+        }
+
+        private void btnVeelMannekes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMannekesOverload_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

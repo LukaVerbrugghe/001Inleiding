@@ -137,6 +137,7 @@
             this.btnMannetje.TabIndex = 2;
             this.btnMannetje.Text = "Mannetje";
             this.btnMannetje.UseVisualStyleBackColor = true;
+            this.btnMannetje.Click += new System.EventHandler(this.btnMannetje_Click);
             // 
             // btnVeelMannekes
             // 
@@ -146,6 +147,7 @@
             this.btnVeelMannekes.TabIndex = 2;
             this.btnVeelMannekes.Text = "Veel mannekes";
             this.btnVeelMannekes.UseVisualStyleBackColor = true;
+            this.btnVeelMannekes.Click += new System.EventHandler(this.btnVeelMannekes_Click);
             // 
             // btnMannekesOverload
             // 
@@ -155,6 +157,7 @@
             this.btnMannekesOverload.TabIndex = 2;
             this.btnMannekesOverload.Text = "Mannekes overload";
             this.btnMannekesOverload.UseVisualStyleBackColor = true;
+            this.btnMannekesOverload.Click += new System.EventHandler(this.btnMannekesOverload_Click);
             // 
             // Form1
             // 
