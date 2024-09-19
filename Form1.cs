@@ -154,7 +154,23 @@ namespace _001Inleiding
 
         private void btnGroepCirkels_Click(object sender, EventArgs e)
         {
+            //we willen 100 cirkels van een willekeurige kleur op een willekeurige plaats met een vaste straal
+            //willekeurige kleur doet de klasse
+            //wikkekeurige plaats berekenen wij
+            //straal is vast --> 25
+            int straal = 25;
 
+            //100 keer herhalen
+            for (int i = 0; i < 3000; i++)
+            {
+                //willekeurige locatie bereken
+                Random random = new Random();
+                //int randomX = random.Next(20, 400);
+                //int randomY = random.Next(20, 300);
+
+                //teken de cirkel
+                Cirkel cirkel = new Cirkel(pnlCanvas.CreateGraphics(), random.Next(20, 400), random.Next(20, 300), straal);
+            }
         }
     }
 }
