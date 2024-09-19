@@ -127,6 +127,7 @@
             this.btnGroepCirkels.TabIndex = 2;
             this.btnGroepCirkels.Text = "Groep cirkels";
             this.btnGroepCirkels.UseVisualStyleBackColor = true;
+            this.btnGroepCirkels.Click += new System.EventHandler(this.btnGroepCirkels_Click);
             // 
             // btnMannetje
             // 
@@ -159,6 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnMannekesOverload);
             this.Controls.Add(this.btnGroepCirkels);

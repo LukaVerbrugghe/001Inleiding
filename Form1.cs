@@ -149,6 +149,11 @@ namespace _001Inleiding
 
         private void btnCirkelsKlasse_Click(object sender, EventArgs e)
         {
+            Cirkel cirkel = new Cirkel(pnlCanvas.CreateGraphics(), 200, 200, 25);
+        }
+
+        private void btnGroepCirkels_Click(object sender, EventArgs e)
+        {
 
         }
     }
