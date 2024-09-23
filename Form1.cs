@@ -161,7 +161,7 @@ namespace _001Inleiding
             int straal = 25;
 
             //100 keer herhalen
-            for (int i = 0; i < 200; i++)
+            for (int i = 0; i < 2000; i++)
             {
                 //willekeurige locatie bereken
                 Random random = new Random();

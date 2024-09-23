@@ -18,15 +18,15 @@ namespace _001Inleiding
 
         public int yPositieCirkel { get; set;}
 
-        public int straalHoofd {  get; set; }
+        public int sizeHead {  get; set; }
 
         //constructor
-        public Mannetje(Graphics graphics, SolidBrush solidBrush, int x, int y, int straal) { 
+        public Mannetje(Graphics graphics, SolidBrush solidBrush, int x, int y, int size) { 
             g = graphics;
             brush = solidBrush;
             xPositieCirkel = x;
             yPositieCirkel = y;
-            straalHoofd = straal;
+            this.sizeHead = size;
 
             //we beginnen met een cirkel te tekenen als hoofd
             tekenHoofd();
@@ -35,12 +35,13 @@ namespace _001Inleiding
 
         private void tekenHoofd()
         {
-            g.FillEllipse(brush, xPositieCirkel, yPositieCirkel, straalHoofd, straalHoofd);
+            g.FillEllipse(brush, xPositieCirkel, yPositieCirkel, sizeHead, sizeHead);
         }
 
         private void tekenTorso()
         {
-            g.FillRectangle(brush, xPositieCirkel - (straalHoofd * 1/3), yPositieCirkel - straalHoofd, straalHoofd * 2/3, straalHoofd * 2);
+            //dit was zware tyfus zooi, niet proberen
+            //g.FillRectangle(brush, )
         }
     }
 }
