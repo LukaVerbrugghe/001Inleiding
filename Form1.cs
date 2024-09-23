@@ -161,7 +161,7 @@ namespace _001Inleiding
             int straal = 25;
 
             //100 keer herhalen
-            for (int i = 0; i < 3000; i++)
+            for (int i = 0; i < 200; i++)
             {
                 //willekeurige locatie bereken
                 Random random = new Random();
@@ -169,7 +169,7 @@ namespace _001Inleiding
                 //int randomY = random.Next(20, 300);
 
                 //teken de cirkel
-                Cirkel cirkel = new Cirkel(pnlCanvas.CreateGraphics(), random.Next(20, 400), random.Next(20, 300), straal);
+                Cirkel cirkel = new Cirkel(pnlCanvas.CreateGraphics(), random.Next(25, 400), random.Next(25, 466), straal);
             }
         }
 
