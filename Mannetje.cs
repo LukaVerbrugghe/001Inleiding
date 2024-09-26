@@ -31,7 +31,10 @@ namespace _001Inleiding
 
             //we beginnen met een cirkel te tekenen als hoofd
             tekenHoofd();
+            //gevolgd door een rechthoek als torso
             tekenTorso();
+            //en een trapezium voor de armen
+            tekenArmen();
         }
 
         private void tekenHoofd()
@@ -49,6 +52,13 @@ namespace _001Inleiding
             int breedteTorso = sizeHead * 2 / 3;
             int lengteTorso = sizeHead * 2;
             g.FillRectangle(brush, startPositieLichaamX, startPositieLichaamY, breedteTorso, lengteTorso);
+        }
+
+        private void tekenArmen()
+        {
+            //linkerarm
+            //we gaan 4 punten nodig hebben --> array
+            Point[] points = new Point[4];
         }
     }
 }
