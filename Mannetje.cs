@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 namespace _001Inleiding
 {
@@ -40,8 +41,14 @@ namespace _001Inleiding
 
         private void tekenTorso()
         {
-            //dit was zware tyfus zooi, niet proberen
-            //g.FillRectangle(brush, )
+
+            //voor de torso hebben we een rechthoek nodig
+            //poging: 3
+            int startPositieLichaamX = (xPositieCirkel) + (sizeHead / 6);
+            int startPositieLichaamY = yPositieCirkel + sizeHead;
+            int breedteTorso = sizeHead * 2 / 3;
+            int lengteTorso = sizeHead * 2;
+            g.FillRectangle(brush, startPositieLichaamX, startPositieLichaamY, breedteTorso, lengteTorso);
         }
     }
 }
